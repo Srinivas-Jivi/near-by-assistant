@@ -7,7 +7,7 @@ export { default as SpecialtyDropdown } from './components/UI/SpecialtyDropdown'
 export { default as DefaultLayout } from './components/Layout/DefaultLayout/DefaultLayout';
 export { useNearbySearch } from './hooks/useNearbySearch';
 export { useLocation } from './hooks/useLocation';
-export { usePhotoUrl } from './components/UI/GetPhotoUrl/GetPhotoUrl';
+export { usePhotoUrl } from './hooks/usePhotoUrl';
 export { createDefaultConfig, createDefaultLocationService, createDefaultAnalyticsService, createDefaultErrorHandler, createDefaultI18nService, defaultCategories, defaultSpecialties, defaultTheme, defaultTranslations } from './constants/defaultConfig';
 export { createDemoSearchService } from './services/demoSearchService';
 export type { NearByAssistantConfig, PlaceData, PlaceWithLocation, PlaceDetails, SearchParams, CategoryConfig, SpecialtyConfig, SearchService, LocationService, AnalyticsService, ErrorHandler, I18nService, NavigationHandlers, LayoutProps, ThemeConfig, CategoryButtonProps, PlaceCardProps, SpecialtyDropdownProps, UseNearbySearchReturn, UseLocationReturn, UsePhotoUrlReturn, PlaceClickEvent, SearchEvent, MapOptions } from './types';
