@@ -1,0 +1,102 @@
+{
+  "name": "@jivi/nearby-assistant",
+  "version": "1.0.0",
+  "description": "A reusable nearby places assistant component for React applications with location search, filtering, and booking capabilities",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:lib": "npm run clean && vite build --mode lib",
+    "build:types": "tsc --project tsconfig.lib.json",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext ts,tsx --fix",
+    "type-check": "tsc --noEmit",
+    "type-check:lib": "tsc --project tsconfig.lib.json --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run clean && npm run build:lib",
+    "pack:local": "npm run build:lib && npm pack"
+  },
+  "keywords": [
+    "react",
+    "nearby",
+    "places",
+    "location",
+    "plugin",
+    "component",
+    "doctor",
+    "pharmacy",
+    "lab",
+    "restaurant",
+    "booking",
+    "appointment",
+    "maps",
+    "search"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-org/nearby-assistant-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/nearby-assistant-plugin/issues"
+  },
+  "homepage": "https://github.com/your-org/nearby-assistant-plugin#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "dependencies": {
+    "@sentry/react": "^9.29.0",
+    "axios": "^1.10.0",
+    "clevertap-web-sdk": "^1.15.3",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.487.0",
+    "mixpanel-browser": "^2.65.0",
+    "react-device-detect": "^2.2.3",
+    "react-i18next": "^15.5.3"
+  },
+  "devDependencies": {
+    "@types/clevertap-web-sdk": "^1.1.12",
+    "@types/jest": "^29.5.8",
+    "@types/mixpanel-browser": "^2.60.0",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^8.34.0",
+    "@typescript-eslint/parser": "^8.34.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "jest": "^29.7.0",
+    "postcss": "^8.4.35",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^5.0.5",
+    "sass-embedded": "^1.89.2",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.8.3",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.7.2"
+  }
+}

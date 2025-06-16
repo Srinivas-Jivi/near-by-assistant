@@ -1,0 +1,39 @@
+# Development files
+src/demo/
+src/main.tsx
+src/App.tsx
+src/App.css
+dev-dist/
+.env*
+
+# Build tools
+vite.config.ts
+tsconfig*.json
+tailwind.config.ts
+postcss.config.js
+eslint.config.js
+.eslintrc.cjs
+
+# Development dependencies
+node_modules/
+.git/
+.gitignore
+
+# Documentation (keep README.md and CHANGELOG.md)
+docs/
+
+# Testing
+**/*.test.*
+**/*.spec.*
+jest.config.*
+coverage/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db 
