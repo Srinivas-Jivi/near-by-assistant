@@ -1,3 +1,6 @@
+// Import main styles
+import './styles/index.css';
+
 // Main Component
 export { NearByAssistant } from './components/NearByAssistant/NearByAssistant';
 

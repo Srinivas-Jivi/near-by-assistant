@@ -1,3 +1,4 @@
+
 export { NearByAssistant } from './components/NearByAssistant/NearByAssistant';
 export { default as CategoryButton } from './components/UI/CategoryButton/CategoryButton';
 export { default as StarRating } from './components/UI/StarRating/StarRating';
