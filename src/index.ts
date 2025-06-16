@@ -68,6 +68,3 @@ export type {
   IOSWebKit
 } from './types/native-interfaces';
 
-// Styles export (consumers can import this separately)
-import './styles/index.css';
-
